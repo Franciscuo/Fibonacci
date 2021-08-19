@@ -1,11 +1,12 @@
-import { Router } from "express";
+import { Router, Request, Response} from "express";
 import logger from '../config/logger'
 
 const router: Router = Router();
 
-router.use('/', (req, res) => {
+router.use('/', (req: Request, res: Response): Response => {
     logger.info('Esto es un test');
-    res.send('test');
+
+    return res.send('test');
 })
 
 export default router;

@@ -7,6 +7,8 @@
       "plugin:@typescript-eslint/recommended"
     ],
     "rules": {
+      "func-names": "error",
+      "no-console": "error",
       "max-len": [
         "error",
         150
